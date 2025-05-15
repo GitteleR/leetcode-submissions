@@ -1,0 +1,6 @@
+For the number palindrome problem, I thought i could use the reverse integer code that i wrote before
+This would make it easy to test the reverse number to the initial number 
+
+^ Ran but had errors with a few test cases, leading the small error fixes of the number zero and negative values
+
+negative values will never be a palindrome and zero will always be a palindrome
