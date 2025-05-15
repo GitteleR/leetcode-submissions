@@ -1,0 +1,36 @@
+decided to use regex to check for pattern recognition
+
+had problem with Regex regex = new Regex(@p);
+testcase with string aa return true as it match the pattern a twice
+
+
+🔹 ^ — Start of String (or Line)
+The caret (^) matches the position at the beginning of the string.
+
+ex.
+^a matches "a" in "abc" but not in "zabc".
+
+^abc matches "abc" in "abcdef" but not in "zabcdef".
+
+In multiline mode, ^ can also match the position after a newline character, effectively matching the start of each line within the string.
+
+🔹 $ — End of String (or Line)
+The dollar sign ($) matches the position just before the end of the string.
+
+Examples:
+
+a$ matches "a" in "ba" but not in "ab".
+
+abc$ matches "abc" in "zabc" but not in "zabcdef".
+
+In multiline mode, $ can also match the position before a newline character, effectively matching the end of each line within the string.
+
+🔹 Combining ^ and $ — Exact Match
+When used together, ^ and $ ensure that the entire string matches the pattern.
+
+Example:
+
+^abc$ matches "abc" but not "abc " or "zabc".
+
+This combination is useful for validating that a string conforms exactly to a specific format.
+
